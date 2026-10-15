@@ -1,3 +1,5 @@
+> For the experimental lab prerelease / Для лабораторного prerelease: [LAB_TESTING.md](../LAB_TESTING.md). The instructions below describe a future production release.
+
 # Installation and removal
 
 **No working PKG has been published.** These steps describe the future signed

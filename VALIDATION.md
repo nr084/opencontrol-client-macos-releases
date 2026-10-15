@@ -1,7 +1,6 @@
 # Validation — 2026-10-15
 
-Development version 0.1.0. **No public binary release.** The owner cancelled
-UI-only/ad-hoc testing distribution. Developer ID/provisioning are unavailable.
+Experimental public prerelease **0.1.0-lab.1** is available with VPN activation enabled. Ad-hoc signed for SIP-disabled laboratory testing; Developer ID/provisioning remain unavailable. Live testing is deferred by the owner.
 
 | Check | Result |
 | --- | --- |
@@ -17,7 +16,7 @@ UI-only/ad-hoc testing distribution. Developer ID/provisioning are unavailable.
 | Localization parity | PASS: 118 matching RU/EN keys |
 | Synthetic 32-second loopback ABI/TLS/UDP test | PASS: 301 authenticated echoes, 7 changed route callbacks, continuing rekeys |
 | PKG packaging pipeline (earlier local validation artifact) | PASS: 5.2 MB; extracted app signature integrity and Universal architecture checked |
-| PKG distribution | CANCELLED: validation-only installer is not published and is removed |
+| PKG distribution | Experimental lab prerelease published; Universal 2, signatures and entitlements checked |
 | UI | RU/EN rendered from real SwiftUI with synthetic profile, visually inspected |
 | Developer ID / provisioning / notarization | NOT AVAILABLE |
 | Signed System Extension activation and real OS routing | NOT TESTED |

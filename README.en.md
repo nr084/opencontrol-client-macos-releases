@@ -10,18 +10,14 @@ A macOS client in development, based on SwiftUI and OpenControl Library, for pri
 Kerio Control networks. It carries over the Android icon and profile logic and
 provides a menu bar control and a planned PKG installer.
 
-> **No release is available yet.** The app and System Extension build for both
-> CPU architectures. VPN activation requires Apple Developer signing and
-> provisioning. The owner chose not to distribute a test build with only a working
-> UI. Live corporate-server interoperability is not yet verified.
+> **Experimental 0.1.0-lab.1 is available.** Build and packaging checks pass. Extension activation and live traffic are unverified. A normal SIP-enabled release still requires Apple signing and provisioning.
 
 ## Planned distribution
 
 [Releases](https://github.com/nr084/opencontrol-client-macos-releases/releases)
 
 One PKG for **macOS 13+**, installing **OpenControl Client.app** for Apple Silicon
-and Intel, with an uninstaller, SHA256 and installation guide. No installation
-files are currently published.
+and Intel, with an uninstaller, SHA256 and installation guide. Experimental installation files are available in the prerelease.
 
 ![English interface](assets/interface-en.png)
 
