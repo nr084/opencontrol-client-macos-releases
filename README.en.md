@@ -1,3 +1,5 @@
+> Experimental laboratory prerelease: [v0.1.0-lab.1](https://github.com/nr084/opencontrol-client-macos-releases/releases/tag/v0.1.0-lab.1). VPN activation is enabled but unverified; SIP-disabled testing only. [RU/EN instructions](LAB_TESTING.md). No production release yet.
+
 <p align="center"><img src="assets/icon.png" width="96" alt="OpenControl Client"></p>
 <h1 align="center">OpenControl Client for macOS</h1>
 <p align="center">A native client for your private network.<br>Universal 2 · Apple Silicon + Intel · English / Русский</p>
