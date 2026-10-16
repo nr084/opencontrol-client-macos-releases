@@ -1,6 +1,6 @@
 # Experimental VPN test / Экспериментальный тест VPN
 
-0.1.0-lab.1 · Universal 2 · macOS 13+. Ad-hoc signed, not notarized.
+0.2.0-lab.1 · Universal 2 · macOS 13+. Ad-hoc signed, not notarized.
 **Активация расширения и реальный VPN пока не проверены.**
 **Extension activation and live VPN traffic have not yet been verified.**
 

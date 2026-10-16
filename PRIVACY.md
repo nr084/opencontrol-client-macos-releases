@@ -43,3 +43,20 @@ Profile QR codes include passwords and are shown only on request with a warning;
 image import is local. Settings can erase profiles and Keychain entries. Ordinary
 app removal retains them unless explicit cleanup is selected. GitHub issues are
 public: never post sensitive information. GitHub links are subject to GitHub's own policy.
+
+
+## 0.2.0 data handling / Обработка данных
+
+Profiles and linked-file bookmarks are local; saved passwords use Keychain. CFG
+exports contain saved credentials in Kerio legacy format; QR contains the password.
+Certificate trust is not imported. Sync touches only the explicitly linked local
+file. History is limited to 500 in-memory events per launch. Daily update checks
+contact the fixed public GitHub repository and disclose ordinary HTTPS metadata
+(e.g. source IP) to GitHub; no VPN credentials or profiles are sent. There are no
+analytics or advertisements.
+
+Профили и связь с выбранным CFG хранятся локально, пароли — в Keychain. Экспорт
+CFG/QR содержит учётные данные. Синхронизация работает только с явно выбранным
+локальным файлом. Журнал — до 500 событий в памяти. Проверка обновлений обращается
+к GitHub, который видит обычные метаданные HTTPS; VPN-пароли и профили не передаются.
+Аналитики и рекламы нет.

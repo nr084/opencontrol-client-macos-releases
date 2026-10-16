@@ -1,53 +1,50 @@
-> Experimental laboratory prerelease: [v0.1.0-lab.1](https://github.com/nr084/opencontrol-client-macos-releases/releases/tag/v0.1.0-lab.1). VPN activation is enabled but unverified; SIP-disabled testing only. [RU/EN instructions](LAB_TESTING.md). No production release yet.
-
 <p align="center"><img src="assets/icon.png" width="96" alt="OpenControl Client"></p>
-<h1 align="center">OpenControl Client for macOS</h1>
-<p align="center">A native client for your private network.<br>Universal 2 · Apple Silicon + Intel · English / Русский</p>
+<h1 align="center">OpenControl Client · macOS</h1>
+<p align="center">Universal 2 · Apple Silicon + Intel · macOS 13+ · English / Русский</p>
 
-[Русский](README.md) | **English**
+[Русский](README.md) · **English**
 
-A macOS client in development, based on SwiftUI and OpenControl Library, for private
-Kerio Control networks. It carries over the Android icon and profile logic and
-provides a menu bar control and a planned PKG installer.
+Windows client features adapted for Mac: six tabs, VPN switch, transparent shield,
+dark/light themes and native macOS controls.
 
-> **Experimental 0.1.0-lab.1 is available.** Build and packaging checks pass. Extension activation and live traffic are unverified. A normal SIP-enabled release still requires Apple signing and provisioning.
+**[Download 0.2.0-lab.1](https://github.com/nr084/opencontrol-client-macos-releases/releases/tag/v0.2.0-lab.1)**
+— experimental laboratory build requiring SIP-disabled testing.
+**Extension activation and live VPN traffic are not yet verified.**
+One OpenControl Client.app supports both architectures. The release includes PKG,
+uninstaller, SHA256 and [RU/EN lab instructions](LAB_TESTING.md).
 
-## Planned distribution
+![Connection](assets/interface-en.png)
 
-[Releases](https://github.com/nr084/opencontrol-client-macos-releases/releases)
+## Features
 
-One PKG for **macOS 13+**, installing **OpenControl Client.app** for Apple Silicon
-and Intel, with an uninstaller, SHA256 and installation guide. Experimental installation files are available in the prerelease.
+- Sorted profiles, default selection and Keychain passwords.
+- Certificate inspection, SHA-256 trust and exact-certificate expiry consent.
+- Kerio CFG import with duplicate policy, user.cfg export and opt-in hourly/manual
+  local sync including deletions; conflicting edits pause synchronization.
+- Compatible QR display, PNG export and image/JSON import.
+- Shared IPv4 exclusions, routes and DNS through Network Extension.
+- Menu bar connect, reconnect and profile switch after previous-session cleanup.
+- Close hides the window; explicit quit waits for VPN shutdown.
+- Last 500 session events, session traffic totals and notifications.
+- Opt-in login startup without automatically connecting VPN.
+- Daily stable update checks, Universal PKG download and SHA256 verification.
+  Installation is handed to standard macOS Installer while VPN is stopped.
 
-![English interface](assets/interface-en.png)
+![Light theme](assets/interface-en-light.png)
+![Settings](assets/settings-en.png)
 
-*Rendered from the actual SwiftUI interface using a demonstration profile.
-`vpn.example.test` is illustrative, not a project-provided server.*
+Actual SwiftUI renders with synthetic data only. `vpn.example.test` is illustrative,
+not a project-provided server.
 
-## Implemented in source
+[Validation](VALIDATION.md) · [Changelog](CHANGELOG.md) · [Privacy](PRIVACY.md) ·
+[Issues](https://github.com/nr084/opencontrol-client-macos-releases/issues).
 
-Profiles, Keychain password storage, certificate inspection and explicit trust,
-per-certificate expiry consent, Android-compatible QR/JSON import and QR display,
-IPv4 CIDR exclusions, reconnection, traffic/rate/session statistics, VPN address,
-menu bar control and complete Russian/English UI.
+Build, signatures, architectures, synthetic protocol and CFG checks pass. Installed
+system behavior, real corporate firewall interoperability and physical Intel hardware
+still require testing. This is not a production-ready VPN release.
+CFG/QR exports contain credentials; never publish them or corporate network logs.
 
-Android per-application selection is not supported; routes apply to all apps.
-IPv6 is captured and blocked during a VPN session. This is not an always-on kill switch.
-
-[Validation and limitations](VALIDATION.md) · [Changelog](CHANGELOG.md) ·
-[Future installation / removal](docs/INSTALL.en.md) · [Privacy](PRIVACY.md) ·
-[Issues](https://github.com/nr084/opencontrol-client-macos-releases/issues)
-
-A short synthetic loopback test covers TLS/UDP, key rotation and route-update
-continuity. Signed System Extension activation, OS route installation, a real
-corporate server and physical Intel acceptance still need testing.
-
-Access comes from your administrator. No public servers or accounts are supplied.
-Do not post credentials, keys or corporate network logs in issues.
-
-**Independent project, not affiliated with or supported by Kerio/GFI.** Names are
-used only to describe intended compatibility. This repository contains user docs
-and will host releases; application sources are private. The
-[protocol library](https://github.com/nr084/opencontrol-protocol) is a separate public project.
-
-© nr084
+Access comes from your administrator. No public servers or accounts are provided.
+Independent project, not affiliated with Kerio/GFI. App sources are private;
+[protocol library](https://github.com/nr084/opencontrol-protocol) remains a separate
+public project. © 2026 nr084.
